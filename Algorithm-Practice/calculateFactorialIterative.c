@@ -2,16 +2,13 @@
 
 int calculateFactorial (int numberToFactorial) {
 	int count = numberToFactorial;
-	printf("Count: %d\nNumberToFactorial: %d\n", count, numberToFactorial);
 	for (int i = 1; i < count; i ++) {
-		printf("Count: %d\nNumberToFactorial: %d\n", count, numberToFactorial);
 		numberToFactorial *= i;
 	}
 	return (int) numberToFactorial;
 }
 
 int main () {
-	// int factorialOfFive = 5;
 	int factorialOfFive = calculateFactorial(5);
 	int factorialOfSix = calculateFactorial(6);
 	int factorialOfSeven = calculateFactorial(7);
